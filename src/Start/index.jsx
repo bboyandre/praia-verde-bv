@@ -3,8 +3,8 @@ import logo from '../assets/brasao-prefeitura-municipal-de-boa-vista-rr 1.png'
 
 const Start = ()=> {
     return (
-        <div className="App">
-            <header className="App-header">
+        <div className="Start">
+            <header className="Start-header">
                 <img src={logo}></img>
                 <p>PRAIA VERDE BV</p>
             </header>
