@@ -1,13 +1,14 @@
 .Praias {
   background-color: #282c34;
+  color: white;
   min-height: 100vh;
-  padding: 10px;
+  .white-mode {
+    background-color: white;
+    color: black;
+  }
 }
 
 .Praias-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: greenyellow;
 }
@@ -19,22 +20,20 @@
   height: 20px;
 }
 
-.Praias-body {
-  color: white;
+.slide-container {
+  line-height: 10px;
+  .nota {
+    font-size: 12px;
+  }
 }
 
-.Praias-container{
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  .Praias-info {
-    line-height: 8px;
-  }
-  .Praias-square {
-    background-color: white;
-    border-radius: 5px;
-    width: 90px;
-    height: 90px;
-    margin-right: 10px;
-  }
+.Praias-square {
+  background-color: white;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+}
+
+.Praias-estrelas {
+  width: 40px;
 }
