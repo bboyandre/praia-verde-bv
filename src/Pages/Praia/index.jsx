@@ -2,6 +2,7 @@ import './style.scss'
 import seta from '../../assets/arrow-left.png'
 import lixeira from '../../assets/lixeira.png'
 import usuario from '../../assets/usuario.png'
+import niveis from '../../assets/niveis.png'
 
 import { GrExpand } from 'react-icons/gr'
 
@@ -42,9 +43,9 @@ const Praia = ()=> {
                                 <img src={lixeira} alt="Lixeira" />
                             </div>
                             <div className='pt-3'>
-                                <h4 className='lixeiras-proximas'>
+                                <h3 className='lixeiras-proximas'>
                                     Lixeiras próximas de você
-                                </h4>
+                                </h3>
                                 <p className='toque-no-mapa'>
                                     Toque para ver o mapa
                                 </p>
@@ -58,7 +59,28 @@ const Praia = ()=> {
                     </a>
                 </section>
                     <section className="Praia-lixeiras">
-                        <p>Níveis de poluição</p>
+                        <Slider {...settings}>
+                            <div className='d-flex justify-content-center align-items-center flex-column p-3'>                            
+                                <div className=''>
+                                    <h3>Níveis de poluição</h3>
+                                </div>
+                                <div className='pt-2 pb-2'>
+                                    <img src={niveis} alt="Níveis de poluição" />
+                                </div>
+                                {/* <p>Boa Vista</p> */}
+                                <p className=''>Moderado</p>
+                            </div>
+                            <div className='d-flex justify-content-center align-items-center flex-column p-3'>                            
+                                <div className=''>
+                                    <h3>Níveis de poluição</h3>
+                                </div>
+                                <div className='pt-2 pb-2'>
+                                    <img src={niveis} alt="Níveis de poluição" />
+                                </div>
+                                {/* <p>Boa Vista</p> */}
+                                <p>Moderado</p>
+                            </div>
+                        </Slider>
                     </section>
                     <section className='pb-5'>
                         <h2 className='pt-3 pb-3'>
