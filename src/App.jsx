@@ -1,14 +1,23 @@
 // import './App.css'
-import Start from './Start/index'
-import Praias from './Praias/index'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Start from './Pages/Start'
+import Praias from './Pages/Praias'
+import Praia from './Pages/Praia'
+import Mapa from './Pages/Mapa'
 
 function App() {
 
   return (
-    <>
-      {/* <Start /> */}
-      <Praias />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/praias" element={<Praias />} />
+        <Route path="/praia" element={<Praia />} />
+        <Route path="/mapa" element={<Mapa />} />
+      </Routes>
+    </BrowserRouter>    
   )
 }
 
